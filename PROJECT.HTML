@@ -57,16 +57,16 @@
   <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal"></button>
   </div>
   <div class="modal-body">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" action="database.php" method="post" novalidate>
     <diV class="form-floating mb-3 mt-3">
-    <input type="text" class="form-control" id="name" required>
+    <input type="text" class="form-control" id="name" name="name" required>
     <label for="name" class="form-label">YOUR NAME</label></diV>
     <diV class="form-floating mb-3 mt-3">
-    <input type="email" class="form-control" id="email" required>
+    <input type="email" class="form-control" id="email" name="email" required>
     <label for="email" class="form-label">E-Mail</label></diV>
     <diV class="form-group mb-3 mt-3">
     <label for="event" class="form-label">SELECT TYPE OF EVENT :</label>
-    <select id="event" class="form-control">
+    <select id="event" class="form-control" name="event">
     <option value="OPTION 1">MARRIAGE</option>    
     <option value="OPTION 2">RECEPTION</option>
     <option value="OPTION 3">DESTINATION WEDDING</option>
@@ -80,7 +80,7 @@
     </select></diV>
     <diV class="form-group mb-3 mt-3">
     <label for="pricing" class="form-label">PRICING :</label>
-    <select id="pricing" class="form-control">
+    <select id="pricing" class="form-control" name="price">
     <option value="OPTION 1">BELOW 50,000 RS.</option>
     <option value="OPTION 2">50,000-1,00,000 RS.</option>
     <option value="OPTION 3">1,00,000-2,00,000 RS.</option>
@@ -92,7 +92,7 @@
     </select></diV>
     <diV class="form-group mb-3 mt-3">
     <label for="places" class="form-label">PLACES :</label>
-    <select id="places" class="form-control">
+    <select id="places" class="form-control" name="place">
     <option value="OPTION 1">HYDERABAD</option>
     <option value="OPTION 2">MUMBAI</option>
     <option value="OPTION 3">CHENNAI</option>
